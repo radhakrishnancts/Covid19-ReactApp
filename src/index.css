@@ -1,0 +1,126 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+ height: 150px;
+ width: 100%;
+ background: linear-gradient(#033A70, #033A70);
+ float: left;
+}
+
+.logo{
+  width: 15%;
+  height: 150px;
+  float: left;
+}
+
+.confirmed{
+  height: 150px;
+  width: 10%;
+  float: left;
+  margin-left: 50px;
+  color: red;
+}
+.header-heading{
+  font-weight: bold;
+  font-size: 20px;
+}
+.confirmed-content{
+  height: 100px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.active{
+  height: 150px;
+  width: 10%;
+  float: left;
+  margin-left: 50px;
+  color: blue;
+}
+
+.active-content{
+  height: 100px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.recovered{
+  height: 150px;
+  width: 10%;
+  float: left;
+  margin-left: 50px;
+  color:lightgreen;
+}
+
+.recovered-content{
+  height: 100px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.deceased{
+  height: 200px;
+  width: 10%;
+  float: left;
+  margin-left: 50px;
+  color: yellow;
+}
+
+.deceased-content{
+  height: 100px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.header-title{
+  height: 200px;
+  width: 15%;
+  float: left;
+  color: white;
+}
+
+.header-title-content{
+  height: 100px;
+  width: 100%;
+  margin-top: 25px;
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.content{
+  width: 100%;
+  height: 700px;
+  overflow: scroll;
+}
+
+.row-heading{
+  padding:10px;
+  list-style:none;
+  border-bottom:solid 1px black;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+}
+
+.footer{
+  height: 50px;
+  width: 100%;
+  float: left;
+  color: orangered;
+}
+
+.sort-btn{
+  border: none;
+  font-weight: bold;
+}
+
+.search-box{
+  float: right;
+}
