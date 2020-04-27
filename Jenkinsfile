@@ -1,35 +1,17 @@
-pipeline {
+FROM node:12.2.0
 
-    agent {
+WORKDIR /app
 
-        docker {
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
 
-            image 'node:6-alpine'
+# install and cache app dependencies
+COPY package.json /app/package.json
+RUN npm install
 
-            args '-p 3000:3000'
+# add app
+COPY . /app
 
-        }
-
-    }
-
-    environment {
-
-        CI = 'true'
-
-    }
-
-    stages {
-
-        stage('Build') {
-
-            steps {
-
-                sh 'npm install'
-
-            }
-
-        }
-
-    }
-
-}
+# start app
+#CMD ng serve --host 0.0.0.0
+CMD npm start
